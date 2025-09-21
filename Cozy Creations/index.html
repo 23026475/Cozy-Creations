@@ -4,94 +4,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cozy Creations</title>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Main CSS -->
   <link rel="stylesheet" href="./assets/css/LandingPage.css">
-  <link rel="stylesheet" href="./assets/css/footer.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="logo-link">
-        <img src="assets/images/logo6-removebg-preview.png" alt="Cozy Creations logo" class="logo">
-      </a>
-      <nav class="main-nav">
-        <span class="nav-active">Home</span>
-        <a href="About Us.html">About Us</a>
-        <a href="LogIn.html">Log In</a>
-        <a href="RegisterBuyer.html">Sign Up</a>
-        <a href="Cart.html">Shop</a>
-        <a href="CustomOrder.html">Custom Orders</a>
-      </nav>
-    </div>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">Cozy Creations</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="HomePage.html">Shop</a></li>
+        <li><a href="CustomOrder.html">Custom</a></li>
+        <li><a href="About Us.html">About</a></li>
+        <li><a href="Cart.html" class="cart-link">🛒</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-inner">
-      <h1>Cozy Creations</h1>
-      <p>Luxury seasonal and custom furniture, designed just for you.</p>
-      <div class="hero-cta">
-        <a href="Cart.html"><button class="buttonShopNow">Shop Now</button></a>
-        <a href="CustomOrder.html"><button class="buttonShopNow">Custom Orders</button></a>
+  <!-- Hero Section -->
+  <section class="hero fade-in">
+    <div class="hero-text">
+      <h1>Cozy Corners, Timeless Comfort</h1>
+      <p>Discover seasonal collections and custom furniture designed to fit your unique style.</p>
+      <a href="HomePage.html" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Highlights Section -->
+  <section class="highlights slide-up">
+    <div class="highlight-card">
+      <img src="./assets/images/background.png" alt="Seasonal Collection">
+      <h3>Seasonal Collection</h3>
+      <p>New looks every season, curated to make your space cozy and modern.</p>
+    </div>
+    <div class="highlight-card">
+      <img src="./assets/images/b2.png" alt="Custom Furniture">
+      <h3>Custom Furniture</h3>
+      <p>Work with our designers to bring your dream furniture to life.</p>
+    </div>
+    <div class="highlight-card">
+      <img src="./assets/images/b8.png" alt="About Cozy Creations">
+      <h3>About Us</h3>
+      <p>Our mission is to create cozy corners for every home.</p>
+    </div>
+  </section>
+
+  <!-- Featured Pieces Section (NEW) -->
+  <section class="featured-pieces fade-in">
+    <h2>Featured Pieces</h2>
+    <p class="section-subtitle">Handpicked furniture for your cozy home.</p>
+    <div class="pieces">
+      <div class="piece">
+        <img src="./assets/images/b5.png" alt="Luxury Sofa">
+        <div class="piece-text">
+          <h3>Luxury Sofa</h3>
+          <p>A timeless piece blending elegance and comfort, perfect for your living room.</p>
+          <a href="Product.html" class="btn-small">View Details</a>
+        </div>
+      </div>
+      <div class="piece">
+        <div class="piece-text">
+          <h3>Rustic Dining Table</h3>
+          <p>Crafted from oak wood, this table brings warmth and authenticity to family meals.</p>
+          <a href="Product.html" class="btn-small">View Details</a>
+        </div>
+        <img src="./assets/images/b9.png" alt="Dining Table">
       </div>
     </div>
   </section>
 
-  <!-- FEATURED SEASONAL COLLECTION -->
-  <section class="page-section" id="featured">
-    <h2>Featured Seasonal Collection</h2>
-    <div class="card-container">
-      <!-- Example product cards -->
-      <div class="product-card">
-        <img src="assets/images/b10.png" alt="Seasonal Chair">
-        <h3>Spring Chair</h3>
-        <p>Elegant terracotta seasonal chair.</p>
-        <a href="Cart.html"><button class="buttonShopNow">Add to Cart</button></a>
-      </div>
-      <div class="product-card">
-        <img src="assets/images/b2.png" alt="Seasonal Table">
-        <h3>Spring Table</h3>
-        <p>Custom-made table for your cozy corner.</p>
-        <a href="Cart.html"><button class="buttonShopNow">Add to Cart</button></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CUSTOM FURNITURE SECTION -->
-  <section class="page-section" id="custom">
-    <h2>Create Your Custom Furniture</h2>
-    <p>Communicate with our designers to bring your dream furniture to life. Tailor-made pieces for every season.</p>
-    <a href="CustomOrder.html"><button class="buttonShopNow">Start Your Design</button></a>
-  </section>
-
-  <!-- ABOUT PREVIEW SECTION -->
-  <section class="page-section" id="about-preview">
-    <h2>About Cozy Creations</h2>
-    <p>We create cozy corners for every home. Seasonal collections, luxury designs, and tailor-made furniture for your unique style.</p>
-    <a href="About Us.html"><button class="buttonShopNow">Learn More</button></a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
+  <!-- Footer -->
+  <footer>
     <div class="footer-inner">
-      <img src="assets/images/logo6-removebg-preview.png" alt="Cozy Creations logo">
-      <p>Subscribe to our newsletter</p>
-      <input type="email" placeholder="Your email">
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="About Us.html">About Us</a>
-        <a href="Cart.html">Shop</a>
-        <a href="CustomOrder.html">Custom Orders</a>
+      <div class="footer-left">
+        <h2>Cozy Creations</h2>
+        <p>Creating comfort for every home.</p>
       </div>
-      <p>&copy; 2024 Cozy Creations. All Rights Reserved.</p>
+      <div class="footer-center">
+        <ul>
+          <li><a href="HomePage.html">Shop</a></li>
+          <li><a href="CustomOrder.html">Custom</a></li>
+          <li><a href="About Us.html">About</a></li>
+          <li><a href="Cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <p>Join our newsletter</p>
+        <input type="email" placeholder="Your email">
+        <button>Subscribe</button>
+      </div>
     </div>
+    <p class="footer-bottom">© 2025 Cozy Creations. All rights reserved.</p>
   </footer>
+
+  <!-- Small Scroll Animation Script -->
+  <script>
+    const elements = document.querySelectorAll('.fade-in, .slide-up');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+    elements.forEach(el => observer.observe(el));
+  </script>
 
 </body>
 </html>
